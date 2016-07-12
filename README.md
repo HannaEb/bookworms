@@ -1,4 +1,6 @@
-# Bookworms
+# Bookworms 📚🐛
+
+![Screenshot](http://imgur.com/SXZwbsD.png)
 
 Bookworms was developed as a project during the [Makers Academy](http://www.makersacademy.com) web development course.
 
@@ -7,9 +9,11 @@ Bookworms aims to remove the admin involved when organising a book club with you
 This project was built using Rails to serve an API, with the user interface being created in Angular.
 
 ### Technologies used
-- Ruby on Rails API
-- AngularJS
-- PostgreSQL
+* Rails API
+* AngularJS
+* Rails asset pipeline
+* PostgreSQL database
+* Heroku
 
 ### Installation instructions
 `$ git clone git@github.com:iammatthewward/bookworms.git`  
@@ -19,13 +23,23 @@ This project was built using Rails to serve an API, with the user interface bein
 `$ rake db:create`  
 `$ rake db:migrate`
 
-### To run via Rails server
-`$ rails s`  
+Register your details:
+
+![Screenshot](http://imgur.com/79djEa6.png)
+
+Go ahead, create a new bookclub!
+
+![Screenshot](http://imgur.com/MSAWWqe.png)
+
+### To run via Rails server and use the app
+`$ rails s` 
+
+Then, in your browser, type in `http://localhost:3000/#/`
 
 ### To run Rails tests using RSpec
 `$ rspec`
 
-### To run test servers - make sure the following are running in separate tabs
+### To run test servers for Angular tests, run each in a separate tab
 `$ npm run webdriver-manager start`  
 `$ npm run start`  
 `$ ionic serve`
@@ -35,7 +49,6 @@ This project was built using Rails to serve an API, with the user interface bein
 
 ## To run Angular feature tests, using Protractor
 `$ protractor test/protractor.conf.js`
-Go to `http://localhost:3000` in your web browser.
 
 ## Contributors
 - [Matt Ward](https://github.com/iammatthewward)
